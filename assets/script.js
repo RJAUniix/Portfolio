@@ -30,23 +30,23 @@ const nom = document.getElementById("nom");
 const prenom = document.getElementById("prenom");
 const btn = document.querySelector('.confirm-btn');
 
-btn.addEventListener('click', afficherPopup);
-function afficherPopup(){  
-    if(nom.value !== '' && prenom.value !== '') {
-        popup.classList.add("popup-ouvert");
-        nom.value = "";
-        prenom.value = "";
-    }
-    else{
-        alert('Remplissez le formulaire correctement svp!')
-    }
+// btn.addEventListener('click', afficherPopup);
+// function afficherPopup(){  
+//     if(nom.value !== '' && prenom.value !== '') {
+//         popup.classList.add("popup-ouvert");
+//         nom.value = "";
+//         prenom.value = "";
+//     }
+//     else{
+//         alert('Remplissez le formulaire correctement svp!')
+//     }
 
     
-    const t = document.querySelector('.popup-ouvert');
-    if(t !== null){
-        popup.addEventListener('click', () => {
-            popup.classList.remove("popup-ouvert");
-        });
-    }
-}
+//     const t = document.querySelector('.popup-ouvert');
+//     if(t !== null){
+//         popup.addEventListener('click', () => {
+//             popup.classList.remove("popup-ouvert");
+//         });
+//     }
+// }
 

@@ -175,6 +175,28 @@ nav ul li a:hover{
     letter-spacing: 1px;
     line-height: 1.3em;
 }
+.about-text div {
+    display: flex;
+    justify-content: space-around;
+}
+/* Bouton pour le cv */
+#cv-btn{
+    background-color: rgba(236, 236, 236, 0.89);
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+#cv-btn:hover{
+    background-color: transparent;
+    border: 2px solid rgba(236, 236, 236, 0.89);
+    cursor: pointer;
+    color: white;
+}
+
 .main{
     width: 1130px;
     max-width: 95%;
@@ -240,12 +262,10 @@ button:hover{
     overflow: hidden;
     text-align: center;
 }
-.card i{
-    font-size: 50px;
-    display: block;
-    text-align: center;
-    margin: 25px 0px;
-    color: rgba(240, 0, 0, 0.89);
+.card img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1em;
 }
 h5{
     color: white;
@@ -310,11 +330,12 @@ h5{
 
 .contact p{
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     margin-bottom: 25px;
-    text-align: center;
-    width: 100%;
+    text-align: left;
+    width: 52vw;
+    margin-left: -6rem;
 }
 .contact .confirm-btn{
     background-color: rgba(240, 0, 0, 0.89);

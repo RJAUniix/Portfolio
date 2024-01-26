@@ -6,24 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="assets/style.css">
-    <script src="assets/script.js" defer></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7373d2e1eb.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.min.css">
+    <!-- CSS -->
+    <script src="assets/script.js" defer></script>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse justify-content-md-between" id="navbarsExample10">
+                <h1 class="text-light">Portfo<span>lio.</span></h1>
+                <ul class="navbar-nav">
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
 
-    <nav>
-        <h2 class="logo">Porfo<span>lio.</span></h2>
-        <ul>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#service">Services</a></li>
-            <li><a href="#porfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="social">
-            <a href="https://www.facebook.com/profile.php?id=100022757145104" target="_blank"><img src="img/facebook.svg" alt="Logo de Facebook"></a>
-            <a href="https://www.linkedin.com/in/andr%C3%A9as-rabeson-365b5b236/" target="_blank"><img src="img/linkedin.svg" alt="Logo de Linkedin"></a>
-            <a href="https://github.com/RJAUniix" target="_blank"><img src="img/github.svg" alt="Logo de Github"></a>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100022757145104" target="_blank"><img src="img/facebook.svg" alt="Logo de Facebook"></a>
+                <a href="https://www.linkedin.com/in/andr%C3%A9as-rabeson-365b5b236/" target="_blank"><img src="img/linkedin.svg" alt="Logo de Linkedin"></a>
+                <a href="https://github.com/RJAUniix" target="_blank"><img src="img/github.svg" alt="Logo de Github"></a>
+            </div>
         </div>
     </nav>
 
@@ -56,9 +67,9 @@
                 <h5>Developer <span>Back-end</span></h5>
                 <p>Je suis un développeur Back-end, je code principalement sur du PHP et JS en utilisant des frameworks.
                     L'emploie de ces technos me permet de réliser facilement des sites annimé et totalement responsive grâce à BOOTSTRAP. 
-                    <br>Ces derniers temps je me suis beaucoup formé sous CMS ,principalement WordPress car celui-ci permet la création 
-                    d'un site responsive en un rien de temps. <br>Et en ce moment je suis à la recherche d'une activité pour valider mes compétances 
-                    dans le développement et l'intégration Web. <br>Annimé par ma passion et ma détermination, je fait toujours le maximum
+                    <br>Ces derniers temps je me suis beaucoup expérimenté sous CMS,principalement WordPress car celui-ci permet la création 
+                    d'un site responsive en un rien de temps. <br>Et en ce moment je suis à la recherche d'une activité passionnante qui me permetrais d'exploiter toutes mes compétances 
+                    dans le développement Web. <br>Annimé par ma passion et ma détermination, je fait toujours le maximum
                     pour être à la hauteur de mes responsabilité.
                 </p>
                 <div>
@@ -76,7 +87,7 @@
         </div>
 
         <div class="box">
-            <div class="card">
+            <div class="carte">
                 <i class="fa-solid fa-code" style="color: #ffffff; margin-bottom: 20px;"></i>
                 <h5>Web Development</h5>
                 <div class="para">
@@ -88,7 +99,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="carte">
                 <i class="fa-solid fa-pen" style="color: #ffffff; margin-bottom: 20px;"></i>
                 <h5>Rédaction Web</h5>
                 <div class="para">
@@ -99,7 +110,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="carte">
                 <i class="fa-solid fa-gear" style="color: #ffffff; margin-bottom: 20px;"></i>
                 <h5>Intégration Web</h5>
                 <div class="para">
@@ -113,14 +124,14 @@
         </div>
     </div>
 
-    <!-- Section Porfolio  -->
-    <div class="porfolio" id="porfolio">
+    <!-- Section Portfolio  -->
+    <div class="portfolio" id="portfolio">
         <div class="title">
-            <h2>Porfolio</h2>
+            <h2>Portfolio</h2>
         </div>
 
         <div class="box">
-            <div class="card">                
+            <div class="carte">                
                 <a href="img/img1.jpg" target="_blank"><img src="img/img1.jpg" alt="Capture de l'application web : Jade Checking"></a>
                 <h5>Application de checking</h5>
                 <div class="para">
@@ -131,11 +142,12 @@
                          lors d'un évènement quelquonque à l'aide d'une application web utilisable sur Tablette, PC et 
                         Smartphone.
                     </p>
+                    <label>Technologies utilisées : </label><p id="techno">HTML, CSS, JS, BOOTSTRAP, PHP, MYSQL, LARAVEL,...</p>
                 </div>
             </div>
 
-            <div class="card">
-                <a href="img/GR.png" target="_blank"><img src="img/GR.png" alt="Capture de l'application web : Gestion de réservation"></a>
+            <div class="carte">
+                <a href="img/logogr.png" target="_blank"><img src="img/logogr.png" alt="Capture de l'application web : Gestion de réservation"></a>
                 <h5>Gestion de réservation</h5>
                 <div class="para">
                     <p>TALEVA Réservation est une application web pour la Gestion des résevation d'un hôtel. 
@@ -144,6 +156,32 @@
                         et le suivi de leur activité en temps réel. En gros, après la mise en place de cette application 
                         , ils aurons une gestions automatique fonctionnelle des tâches liées aux reservations de l'hôtel.
                     </p>
+                    <label>Technologies utilisées : </label><p id="techno">HTML, CSS, JS, BOOTSTRAP, PHP, MYSQL,...</p>
+                </div>
+            </div>
+
+            <div class="carte">
+                <a href="img/logowps.png" target="_blank"><img src="img/logowps.png" alt="Capture de l'application web : Gestion de réservation"></a>
+                <h5>Web Projects Stock</h5>
+                <div class="para">
+                    <p>Plate-forme de vente de solution digitaux en mode logiciel en tant que service SaaS 100% 
+                        Malgache(faites par des Développeurs Malgache) pour le Hackaton D-CLIC 2023 by Sayna.
+                    </p>
+                    <label>Technologies utilisées : </label><p id="techno">WordPress/p>
+                </div>
+            </div>
+
+            <div class="carte">
+                <a href="img/GR.png" target="_blank"><img src="img/GR.png" alt="Capture de l'application web : Gestion de réservation"></a>
+                <h5>Site de l'Université de Toamasina</h5>
+                <div class="para">
+                    <p>TALEVA Réservation est une application web pour la Gestion des résevation d'un hôtel. 
+                        C'est un projet de stage que j'ai effectué au sein de l'hôtel bungalow Taleva permettant de gerer 
+                        faciliment l'inscirptions de leurs clients, la gestion des chambres pour éviter les erreur de doublons, 
+                        et le suivi de leur activité en temps réel. En gros, après la mise en place de cette application 
+                        , ils aurons une gestions automatique fonctionnelle des tâches liées aux reservations de l'hôtel.
+                    </p>
+                    <label>Technologies utilisées : </label><p id="techno">HTML, CSS, JS, BOOTSTRAP, PHP, MYSQL,...</p>
                 </div>
             </div>
         </div>
@@ -171,8 +209,7 @@
     
     <!-- Footer  -->
     <footer>
-        <p>Johanne Andréas</p>
-        <p>Pour plus d'information me concernant, cliquez sur les liens ci-dessous :</p>
+        <p>Pour plus d'information me concernant, suivez-moi sur les réseaux :</p>
         <div class="social">
             <a href="https://www.facebook.com/profile.php?id=100022757145104"><img src="img/facebook.svg" alt="Logo de Facebook"></a>
             <a href="https://www.linkedin.com/in/andr%C3%A9as-rabeson-365b5b236/"><img src="img/linkedin.svg" alt="Logo de Linkedin"></a>
@@ -180,6 +217,9 @@
         </div>
         <p class="end">&copy; 2023 par Johanne Andréas. Tout droit réservé.</p>
     </footer>
+
+    <!-- Javascript -->
+    <script src="assets/Bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

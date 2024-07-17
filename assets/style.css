@@ -1,0 +1,557 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Calibri',sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    background: rgb(2, 0, 7);
+}
+
+body {
+    background: rgb(2, 0, 7);
+}
+
+h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 50px;
+}
+
+h2{
+    color: white;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+span{
+    color: rgba(240, 0, 0, 0.89);
+    margin: 5px;
+}
+
+.badge .bg-purple {
+    background-color: #3700ff;
+}
+
+h4{
+    margin-top: 5em;
+    color: rgba(64, 194, 255, 0.521);
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+nav{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-color: rgb(2, 0, 7);
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+    letter-spacing: 1px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: rgba(240, 0, 0, 0.89);
+    transition: 0.3s ease;
+}
+
+/* Les icons social */
+.social a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(240, 0, 0, 0.89);
+    border-radius: 50%;
+    margin: 0px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.social a:hover{
+    transform: scale(1.3);
+    transition: 0.3s;
+}
+.social img{
+    width: 20px;
+}
+
+.hero{
+    width: 100%;
+    padding: 6em;
+    padding-top: 10em;
+    background-color: rgb(2, 0, 7);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap; 
+}
+.content{
+    width: 600px;
+    position: relative;
+}
+.hero p{
+    color: rgba(255, 255, 255, 0.568);
+    font-size: 1.2em;
+    width: 500px;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 1.3em;
+    margin-bottom: 50px;
+}
+.newsletter form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+.newsletter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid rgba(240, 0, 0, 0.89);
+    outline: none;
+    border-radius: 30px;
+}
+/* Le boutton */
+.newsletter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: rgba(240, 0, 0, 0.89);
+    color: white;
+    box-shadow: 0px 0px 5px #000,0px 0px 15px #858585;
+    top: 6px;
+    right: 6px;
+}
+
+.newsletter form input:last-child:hover {
+    background-color: rgb(134, 4, 4);
+    cursor: pointer;
+}
+#myPic {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: url('../img/image.png') center no-repeat;
+    background-size: cover;
+    border: 3px solid rgba(240, 0, 0, 0.89);
+    box-shadow: 2px 2px 2px rgba(240, 0, 0, 0.89);
+}
+/* About */
+.about{
+    width: 100%;
+    padding: 10vh;
+    background-color: rgb(2, 0, 7);
+}
+.about img{
+    height: auto;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #000,0px 0px 10px #949393;
+}
+.about-text h5{
+    opacity: 80%;
+}
+.about-text p{
+    width: 500px;
+    color: rgba(255, 255, 255, 0.568);
+    font-size: 20px;
+    width: 500px;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 1.3em;
+}
+.about-text div {
+    display: flex;
+    justify-content: space-around;
+}
+/* Bouton pour le cv */
+#cv-btn{
+    background-color: rgba(236, 236, 236, 0.89);
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+#cv-btn:hover{
+    background-color: transparent;
+    border: 2px solid rgba(236, 236, 236, 0.89);
+    cursor: pointer;
+    color: white;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-text p{
+    color: rgba(64, 194, 255, 0.521);
+    letter-spacing: 1px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 45px;
+}
+button{
+    background-color: rgba(240, 0, 0, 0.89);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid rgba(240, 0, 0, 0.89);
+    cursor: pointer;
+}
+
+/* Services */
+.service{
+    background: rgb(2, 0, 7);
+    width: 100%;
+    padding: 10vh;
+    justify-content: center;
+}
+.title h2{
+    color: white;
+    text-align: center;
+}
+.service .box{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap; 
+}
+.service .carte{
+    width: 400px;
+    padding: 20px 35px;
+    background: #0e0d0d;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    text-align: justify;
+}
+.service .carte img{
+    height: 150px;
+    display: block;
+    margin: 1em auto;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.para p{
+    color: rgba(255, 255, 255, 0.726);
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.para label{
+    color: rgba(255, 255, 255, 0.568);
+}
+.para #techno{
+    color: rgba(64, 194, 255, 0.521);
+}
+.carte .button{
+    background-color: rgba(240, 0, 0, 0.89);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.carte .button:hover{
+    background-color: transparent;
+    border: 2px solid rgba(240, 0, 0, 0.89);
+    cursor: pointer;
+}
+
+.carte img {
+    height: 100px;
+}
+
+/* Porfotlio */
+.portfolio{
+    background: rgb(2, 0, 7);
+    width: 100%;
+    padding: 10vh;
+    padding-top: 2em;
+}
+
+.portfolio .box{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap; 
+}
+
+.portfolio .carte{
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    background: #0e0d0d;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: auto;
+    text-align: center;
+    text-align: justify;
+}
+
+.carte h5{
+    margin-top: 20px;
+}
+
+.voir-projet {
+    font-style: none;
+}
+
+.voir-projet button {
+    background-color: rgb(0, 204, 255);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.voir-projet button:hover {
+    background-color: rgb(3, 54, 83);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* Contact */
+.contact{
+    width: 100%;
+    padding: 3em;
+    background-color: rgb(2, 0, 7);
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.contact h2{
+    display: block;
+    text-align: center;
+}
+
+.contact p{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 52vw;
+    margin-left: -6rem;
+}
+.contact .confirm-btn{
+    background-color: rgba(240, 0, 0, 0.89);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+    display: block;
+    margin: 0 auto;
+}
+.contact .confirm-btn:hover{
+    background-color: transparent;
+    border: 2px solid rgba(240, 0, 0, 0.89);
+    cursor: pointer;
+}
+
+.contact input[type=text] {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    color: white;
+    opacity: 90%;
+  }
+  .contact #formulaire-contact {
+    width: 40%;
+    color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    justify-content: center;
+  }
+  
+/* Popup */
+.popup {
+    background: linear-gradient(118deg, rgba(6, 82, 145, 0.992) 10%, rgba(23, 50, 70, 0.9607843137) 80%);
+    width: 700px;
+    height: 25em;
+    border-radius: 15px;
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    display: none;
+    transition: transform 0.5s;
+  }
+  .popup h1 {
+    margin-top: 25%;
+    color: white;
+  }
+  
+  .hide {
+    visibility: hidden;
+  }
+  
+  .popup-ouvert {
+    transform: translate(0%, -100%) scale(1);
+    visibility: visible;
+  }
+
+/* le footer */
+footer{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: #e7e5e5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    width: 500px;
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 27px;
+}
+.social{
+    display: flex;
+}
+.end{
+    color: rgba(0, 0, 0, 0.89);
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+/* La responsivité  */
+
+@media screen and (max-width: 1092px) {
+    .about img {
+        display: none;
+    }
+
+    .content {
+        display: block;
+        text-align: center;
+    }
+    .content p{
+        margin: 30px auto;
+        justify-content: center;
+    }
+    .newsletter form {
+        margin: 30px auto;
+    }
+
+    .about p {
+        font-size: 1em;
+    }
+
+    .service, .portfolio {
+        padding: 0;
+    }
+
+    .contact p{
+        margin: 10px auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact #formulaire-contact  {
+        width: 70%;
+    }
+    
+}
+
+
+@media screen and (max-width: 500px) {
+    .hero p {
+        width: 80vw;
+        font-size: 1em;
+    }
+
+    .newsletter form {
+        width: 80vw;
+    }
+
+
+
+    #myPic {
+        width: 30vh;
+        height: 30vh;
+    }
+
+    .about p {
+        width: 80vw;
+        font-size: 1em;
+    }
+
+    .contact input[type=text] {
+        width: 50vw;
+    }
+
+    footer p{
+        margin-top: 1em;
+        width: 80vw;
+        font-size: 1em;
+        text-align: center;
+    }
+}

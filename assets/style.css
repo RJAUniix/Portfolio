@@ -7,6 +7,21 @@
 
 html {
     background: rgb(2, 0, 7);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Vidéo background */
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
 }
 
 body {
@@ -39,6 +54,7 @@ h4{
     margin-top: 5em;
     color: rgba(64, 194, 255, 0.521);
     letter-spacing: 2px;
+    z-index: 1;
     font-size: 20px;
 }
 
@@ -50,7 +66,9 @@ nav{
     padding-left: 8%;
     padding-right: 8%;
     background-color: rgb(2, 0, 7);
+    z-index: 1;
 }
+
 .logo{
     color: white;
     font-size: 35px;
@@ -99,15 +117,18 @@ nav ul li a:hover{
     width: 100%;
     padding: 6em;
     padding-top: 10em;
-    background-color: rgb(2, 0, 7);
     background-size: cover;
     display: flex;
     justify-content: center;
     flex-flow: row wrap; 
-}
+    /* video */
+    position: relative;
+} 
+
 .content{
     width: 600px;
     position: relative;
+    z-index: 1;
 }
 .hero p{
     color: rgba(255, 255, 255, 0.568);
@@ -165,6 +186,7 @@ nav ul li a:hover{
     width: 100%;
     padding: 10vh;
     background-color: rgb(2, 0, 7);
+    position: relative;
 }
 .about img{
     height: auto;
@@ -177,7 +199,7 @@ nav ul li a:hover{
 }
 .about-text p{
     width: 500px;
-    color: rgba(255, 255, 255, 0.568);
+    color: rgba(255, 255, 255, 0.849);
     font-size: 20px;
     width: 500px;
     text-align: justify;
@@ -364,12 +386,11 @@ h5{
 
 /* Contact */
 .contact{
-    width: 100%;
-    padding: 3em;
     background-color: rgb(2, 0, 7);
     align-items: center;
     margin: 0 auto;
     justify-content: center;
+    position: relative;
 }
 
 .contact h2{
@@ -413,15 +434,21 @@ h5{
     margin-bottom: 25px;
     color: white;
     opacity: 90%;
-  }
-  .contact #formulaire-contact {
-    width: 40%;
+}
+
+
+
+.contact #formulaire-contact {
     color: white;
     margin: 0 auto;
     margin-top: 50px;
     justify-content: center;
-  }
+}
   
+.contact #formulaire-contact label::first-child {
+    margin: 15px;
+    font-size: 15px;
+}
 /* Popup */
 .popup {
     background: linear-gradient(118deg, rgba(6, 82, 145, 0.992) 10%, rgba(23, 50, 70, 0.9607843137) 80%);

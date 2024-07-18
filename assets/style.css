@@ -31,14 +31,15 @@ body {
 h1{
     color: white;
     margin: 20px 0px 20px;
-    font-size: 50px;
+    font-size: 100px;
 }
 
 h2{
     color: white;
-    font-size: 40px;
+    font-size: 70px;
     text-transform: capitalize;
     margin-bottom: 20px;
+    position: relative;
 }
 
 span{
@@ -65,8 +66,9 @@ nav{
     padding-top: 45px;
     padding-left: 8%;
     padding-right: 8%;
-    background-color: rgb(2, 0, 7);
-    z-index: 1;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
 }
 
 .logo{
@@ -443,6 +445,7 @@ h5{
     margin: 0 auto;
     margin-top: 50px;
     justify-content: center;
+    margin: 50px;
 }
   
 .contact #formulaire-contact label::first-child {

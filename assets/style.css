@@ -13,6 +13,44 @@ html {
     height: 100%;
 }
 
+/* Les icons statiques sur le côté */
+
+.statics {
+    margin-top: 150px;
+    margin-left: 20px;
+    -ms-writing-mode: tb-lr;
+        writing-mode: vertical-lr;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    /* Pour changer la direction des mots */
+    writing-mode: vertical-rl; /* or vertical-lr */
+    transform: rotate(180deg); /* Adjust if needed */
+    height: 100vh;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+}
+
+.statics h1 {
+    color: white;
+    font-size: 150px;
+    letter-spacing: 15px;
+    font-family: roboto;
+    white-space: nowrap;
+    animation: scrolldown 5s linear infinite;
+}
+
+@keyframes scrolldown {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+  
+
 /* Vidéo background */
 
 #myVideo {
@@ -76,6 +114,7 @@ nav{
     font-size: 35px;
     letter-spacing: 1px;
     cursor: pointer;
+    z-index: 1000;
 }
 nav ul li{
     list-style-type: none;

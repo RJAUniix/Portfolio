@@ -86,16 +86,14 @@ const btn = document.querySelector('.confirm-btn');
 
 // Gallery d'image
 
-
 function changeImage(buttonId) {
-    const imageElement = document.querySelector('displayed-img');
+    const imageElement = document.getElementById('displayed-img');
     
-    switch(buttonId) {
-        case 'Wps':
-            imageElement.src = '../img/Portfolio/jadechecking.png';
-            break;
-        default:
-            imageElement.src = '../img/Portfolio/gr.png';
-    }
-    alert(success);
+    // if (buttonId == 'Wps') {
+    //     imageElement.src = '../img/Portfolio/jadechecking.png';
+    // }
+    // else {
+    //     imageElement.src = '../img/Portfolio/gr.png';
+    // }
+    console.log(buttonId);
 }

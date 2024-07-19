@@ -69,6 +69,11 @@
         </div>
     </nav>
 
+    <!-- Les icons static sur le coté -->
+    <div class="statics">
+        <h1>PORTFOLIO</h1>
+    </div>
+
     <!-- Vidéo background -->
      
     <video autoplay muted loop id="myVideo">
@@ -201,7 +206,7 @@
                         <a href="#"><img src="img/logogr.png" alt="Capture de l'application web : Gestion de réservation" width="140px"></a>
                     </div>
                     <div class="offset-5 col-lg-4">
-                        <a href="#" class="voir-projet"><button class="btn text-light Gr" data-bs-toggle="modal" data-bs-target="#myModal" id="Gr">Voir le projet&nbsp;<i class="fa-regular fa-eye"></i></button></i></a>
+                        <a href="#" class="voir-projet"><button hidden class="btn text-light Gr" data-bs-toggle="modal" data-bs-target="#myModal" id="Gr">Voir le projet&nbsp;<i class="fa-regular fa-eye"></i></button></i></a>
                     </div>
                 </div>
                 <h5 class="text-light">Gestion de réservation</h5>
@@ -225,7 +230,7 @@
                         <a href="#"><img src="img/logowps.png" alt="Capture de l'application web : Gestion de réservation"></a>
                     </div>
                     <div class="offset-5 col-lg-4">
-                        <a href="#" class="voir-projet"><button onclick="changeImage();" class="btn text-light Wps" data-bs-toggle="modal" data-bs-target="#myModal" id="Wps" id="Wps">Voir le projet&nbsp;<i class="fa-regular fa-eye"></i></button></i></a>
+                        <a href="#" class="voir-projet"><button hidden onclick="changeImage('Wps');" class="btn text-light Wps" data-bs-toggle="modal" data-bs-target="#myModal" id="Wps">Voir le projet&nbsp;<i class="fa-regular fa-eye"></i></button></i></a>
                     </div>
                 </div>
                 <h5 class="text-light">Web Projects Stock</h5>
@@ -312,7 +317,7 @@
             <div class="modal-body">
                 
                 <div class="full-img">
-                    <a href="img/img3.jpg" target="_blank"><img class="displayed-img" width="450px" ></a>
+                    <a href="img/img3.jpg" target="_blank"><img id="displayed-img" class="displayed-img" width="450px" ></a>
                     <div class="overlay"></div>
                 </div>
     
@@ -331,7 +336,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Javascript perso -->
-     <script src="assets/script.js" text="JavaScript"></script>
+    <script src="assets/script.js" text="JavaScript"></script>
 
 </body>
 </html>

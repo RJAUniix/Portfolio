@@ -187,7 +187,6 @@ nav ul li a:hover{
 .about{
     width: 100%;
     padding: 10vh;
-    background-color: rgb(2, 0, 7);
     position: relative;
 }
 .about img{
@@ -262,6 +261,7 @@ button{
     border-radius: 30px;
     transition: .4s;
 }
+
 button:hover{
     background-color: transparent;
     border: 2px solid rgba(240, 0, 0, 0.89);
@@ -388,11 +388,12 @@ h5{
 
 /* Contact */
 .contact{
-    background-color: rgb(2, 0, 7);
+    background-color: rgba(2, 0, 7, 0.61);
     align-items: center;
-    margin: 0 auto;
+    margin: 7em auto;
     justify-content: center;
     position: relative;
+    border: 1px solid white;
 }
 
 .contact h2{
@@ -483,7 +484,7 @@ footer{
     position: relative;
     width: 100%;
     height: 200px;
-    background: #e7e5e5;
+    background: #e7e5e58a;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -511,6 +512,30 @@ footer p:nth-child(2){
     margin-top: 25px;
     font-size: 14px;
 }
+
+/* Gallery d'image */
+
+.full-img {
+    position: relative;
+    display: block;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 640px;
+    height: 480px;
+    background-color: rgba(0,0,0,0);
+  }
+  
+  .thumb-bar img {
+    display: block;
+    width: 20%;
+    float: left;
+    cursor: pointer;
+  }
+
 
 /* La responsivité  */
 

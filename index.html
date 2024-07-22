@@ -7,6 +7,11 @@
     <title>Portfolio | Andréas RABESON</title>
     <link rel="icon" type="image/x-icon" href="img/code-solid.svg">
     <link rel="stylesheet" href="assets/style.css">
+
+    <!-- Police -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7373d2e1eb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,7 +19,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS -->
     <script src="assets/script.js" defer></script>
-
+    <!-- Animated css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Vendor -->
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
     <!-- Style perso -->
     <style>
         .full-img {
@@ -83,7 +91,7 @@
     <div class="hero">
         <div class="content">
             <h4 class="text-light">Bonjour, moi c'est </h4>
-            <h1 class="text-light">Andréas <span> RABESON</span></h1>
+            <h1 class="text-light animate__animated animate__delay-3s animate__shakeX">Andréas <span> RABESON</span></h1>
             <p>
                 Un jeune développeur expérimenté dans la création de sites et d'applications web dynamiques et attractives. <br> 
                 Prêt à transformer vos idées en réalité digitale, à vous créer une identité en ligne à la hauteur de vos exigences, 
@@ -99,7 +107,7 @@
         </div>
 
         <!-- Ma photo -->
-        <div id="myPic">
+        <div class="animate__animated animate__delay-2s animate__backInRight animate__slower" id="myPic">
         </div>
     </div>
 
@@ -109,12 +117,31 @@
             <img src="img/img3.jpg" width="50%">
             <div class="about-text">
                 <h2 class="text-light">À propos</h2>
-                <h5>Developer <span>Back-end</span></h5>
+                <h5>Développeur <span>Back-end</span></h5>
+                <!--  -->
+                <div class="row">
+                    <div class="col-lg-6">
+                      <ul>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> <strong>Anniversaire:</strong> <span class="text-light">12 Janvier 2003</span></li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> <strong>Site Web:</strong> <span class="text-light"><a href="https://rjauniix.github.io/Portfolio/" target="_blank">rjauniix.github.io/Portfolio/</a></span></li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> <strong>Téléphone:</strong> <span class="text-light">+261 38 16 968 13</span></li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> <strong>Pays:</strong> <span class="text-light">Madagascar</span></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6">
+                      <ul>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> <strong>Age:</strong> <span class="text-light">21</span></li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> <strong>Diplôme:</strong> <span class="text-light">Licence</span></li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> <strong>Email:</strong> <span class="text-light"><a href="mailto:rabesonandreas@gmail.com" target="_blank">rabesonandreas@gmail.com</a></span></li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> <strong>Freelance:</strong> <span class="text-light">Disponible</span></li>
+                      </ul>
+                    </div>
+                </div>
+
                 <p>Développeur Back-end spécialisé en PHP et JavaScript, utilisant des frameworks modernes pour créer des sites dynamiques et 
                     entièrement responsives avec BOOTSTRAP. L'utilisation de ces technologies permet de réaliser des sites animés avec facilité.
                     <br>Ayant des expériences significatives avec les CMS, principalement WordPress, qui permet de créer des sites 
-                    responsives en un rien de temps. <br>Actuellement à la recherche d'une opportunité passionnante pour mettre à profit toutes les compétences en développement Web. 
-                    <br> Animé par la passion et la détermination, un engagement constant est assuré pour répondre aux attentes et responsabilités confiées. 
+                    responsives en un rien de temps. <br> Animé par la passion et la détermination, un engagement constant est assuré pour répondre aux attentes et responsabilités confiées. 
                 </p>
                 <div>
                     <a href="#contact"><button type="button"> Me contacter</button></a>
@@ -169,6 +196,70 @@
         </div>
     </div>
 
+    <!-- Section technos  -->
+    <div class="skills" id="skills">
+        <div class="container section-title" data-aos="fade-up">
+            <h2 class="text-light">Mes Technos</h2>
+            <p>Pour la création des sites et applications Web, voici les technologies que j'utilise :</p>
+        </div><!-- End Section Title -->
+    
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row skills-content skills-animation">
+
+                <div class="col-lg-6">
+
+                    <div class="progress">
+                        <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+                        <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div><!-- End Skills Item -->
+
+                    <div class="progress">
+                        <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
+                        <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div><!-- End Skills Item -->
+
+                    <div class="progress">
+                        <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
+                        <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div><!-- End Skills Item -->
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+                    <div class="progress">
+                        <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
+                        <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div><!-- End Skills Item -->
+
+                    <div class="progress">
+                        <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
+                        <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div><!-- End Skills Item -->
+
+                    <div class="progress">
+                        <span class="skill"><span>Laravel</span> <i class="val">55%</i></span>
+                        <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div><!-- End Skills Item -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Section Portfolio  -->
     <div class="portfolio" id="portfolio">
         <div class="title">
@@ -182,18 +273,22 @@
                     <div class="col-lg-3">
                         <a href="#"><img src="img/logojade.jpg" alt="Capture de l'application web : Jade Checking"></a>
                     </div>
-                    <div class="offset-5 col-lg-4">
-                        <a href="#" class="voir-projet"><button type="button" hidden>Voir le projet&nbsp;<i class="fa-regular fa-eye"></i></button></i></a>
+                    <div class="offset-8 col-lg-1">
+                        <a href="#" target="_blank" class="voir-projet" id="voir-gallerie-jd"><i class="fa fa-eye" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <h5 class="text-light">Application de checking</h5>
                 <div class="para">
-                    <p>
+                    <p id="para-jd">
                         JADE Checking est une application web conçue avec Laravel pour gérer les présences et les absences des participants lors des événements de groupe.
                         </br>JADE, l'ONG qui a demandé cette prestation, est Jeunes Actifs pour le Développement, une organisation non gouvernementale locale qui aide de nombreuses personnes en difficulté à vivre dignement grâce à leurs formations et insertions professionnelles.
                         </br>En résumé, elle sert à gérer la présence et l'absence des personnes lors de n'importe quel événement à l'aide d'une application web utilisable sur tablette, PC et smartphone avec quelques clics.
                         </br>L'application est robuste, efficace et sécurisée, ce qui la rend idéale pour des données sensibles.
                     </p>
+                    <div class="gallerie-jd hidden" id="gallerie-jd">
+                        <a href="img/Portfolio/jadechecking.png" target="_blank"><img src="img/Portfolio/jadechecking.png" alt="page evenement"></a>
+                        <a href="img/Portfolio/jadechecking2.png" target="_blank"><img src="img/Portfolio/jadechecking2.png" alt="page présence"></a>
+                    </div>
                     <label>Technologies utilisées : </label>
                     <p id="techno"><span class="badge bg-danger">HTML & CSS</span><span class="badge bg-warning text-dark">JS</span><span class="badge bg-success">BOOTSTRAP</span><span class="badge" style="background-color: purple;">PHP</span><span class="badge bg-danger">Laravel</span><span class="badge bg-secondary">MYSQL</span></p>
                 </div>
@@ -205,22 +300,30 @@
                     <div class="col-lg-3">
                         <a href="#"><img src="img/logogr.png" alt="Capture de l'application web : Gestion de réservation" width="140px"></a>
                     </div>
-                    <div class="offset-5 col-lg-4">
-                        <a href="#" class="voir-projet"><button hidden class="btn text-light Gr" data-bs-toggle="modal" data-bs-target="#myModal" id="Gr">Voir le projet&nbsp;<i class="fa-regular fa-eye"></i></button></i></a>
+                    <div class="offset-8 col-lg-1">
+                        <a href="#" target="_blank" class="voir-projet" id="voir-gallerie-gr"><i class="fa fa-eye" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <h5 class="text-light">Gestion de réservation</h5>
                 <div class="para">
-                    <p>
+                    <p id="para-gr">
                         TALEVA Réservation est une application web dédiée à la gestion des réservations d'un hôtel. Ce projet de stage, réalisé au sein de l'hôtel Bungalow Taleva, permet de gérer facilement les inscriptions des clients, la gestion des chambres pour éviter les erreurs de doublons, ainsi que le suivi des activités en temps réel.
                         </br>En résumé, après la mise en place de cette application,
                         l'hôtel bénéficie désormais d'une gestion automatique et fonctionnelle des tâches liées aux réservations.
                         L'application est sécurisée et facile à utiliser, grâce à son interface intuitive.
                         </br>Ce stage a permis de maîtriser le langage de programmation PHP ainsi que la gestion d'une base de données avec MySQL.
                     </p>
+                    <div class="gallerie-gr hidden" id="gallerie-gr">
+                        <a href="img/Portfolio/gr.png" target="_blank"><img src="img/Portfolio/gr.png" alt="page reservation"></a>
+                        <a href="img/Portfolio/gr4.png" target="_blank"><img src="img/Portfolio/gr4.png" alt="page paramètre"></a>
+                        <a href="img/Portfolio/gr2.png" target="_blank"><img src="img/Portfolio/gr2.png" alt="page planning"></a>
+                        <a href="img/Portfolio/gr3.png" target="_blank"><img src="img/Portfolio/gr3.png" alt="page d'accueil"></a>
+                    </div>
                     <label>Technologies utilisées : </label>
                     <p id="techno"><span class="badge bg-danger">HTML & CSS</span><span class="badge bg-warning text-dark">JS</span><span class="badge bg-success">BOOTSTRAP</span><span class="badge" style="background-color: purple;">PHP</span><span class="badge bg-success">Vue JS</span><span class="badge bg-secondary">MYSQL</span></p>
                 </div>
+
+                
             </div>
 
             <div class="carte">
@@ -229,8 +332,8 @@
                     <div class="col-lg-3">
                         <a href="#"><img src="img/logowps.png" alt="Capture de l'application web : Gestion de réservation"></a>
                     </div>
-                    <div class="offset-5 col-lg-4">
-                        <a href="#" class="voir-projet"><button hidden onclick="changeImage('Wps');" class="btn text-light Wps" data-bs-toggle="modal" data-bs-target="#myModal" id="Wps">Voir le projet&nbsp;<i class="fa-regular fa-eye"></i></button></i></a>
+                    <div class="offset-8 col-lg-1">
+                        <a href="warm-marble.localsite.io" target="_blank" class="voir-projet" hidden><i class="fa fa-link" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <h5 class="text-light">Web Projects Stock</h5>
@@ -251,8 +354,8 @@
                     <div class="col-lg-3">
                         <a href="#"><img src="img/logouniv.png" alt="Capture de l'application web : Gestion de réservation"></a>
                     </div>
-                    <div class="offset-5 col-lg-4">
-                        <a href="#" class="voir-projet"><button class="text-light" hidden>Voir le projet&nbsp;<i class="fa-regular fa-eye"></i></button></i></a>
+                    <div class="offset-8 col-lg-1">
+                        <a href="https://www.univ-toamasina.mg/" target="_blank" class="voir-projet"><i class="fa fa-link" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <h5 class="text-light">Site de l'Université de Toamasina</h5>
@@ -274,7 +377,7 @@
     <div class="col-lg-4 contact" id="contact">
         <form action="https://formsubmit.co/40087d00fcde9312694daf229fa75b4a" method="POST" id="formulaire-contact">
             <h2>Contact</h2>
-            <label>Faites moi confiance dans la création de votre site/application web.</label>
+            <label class="contact-text">Faites moi confiance dans la création de votre site/application web.</label>
             <label for="nom">*Nom :</label>
             <input type="text" id="nom" name="nom" placeholder="Inserer ici votre nom" required>
             <label for="nom">*Prénom(s) :</label>
@@ -300,37 +403,6 @@
         </div>
         <p class="end">&copy; 2023 par Johanne Andréas. Tout droit réservé.</p>
     </footer>
-
-
-    <!-- The Modal -->
-    <div class="modal fade" id="myModal">
-        <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-    
-            <!-- Modal Header -->
-            <div class="modal-header">
-            <h4 class="modal-title">Modal Heading</h4>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-    
-            <!-- Modal body -->
-            <div class="modal-body">
-                
-                <div class="full-img">
-                    <a href="img/img3.jpg" target="_blank"><img id="displayed-img" class="displayed-img" width="450px" ></a>
-                    <div class="overlay"></div>
-                </div>
-    
-            </div>
-    
-            <!-- Modal footer -->
-            <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-            </div>
-    
-        </div>
-        </div>
-    </div>
 
     <!-- Javascript Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
